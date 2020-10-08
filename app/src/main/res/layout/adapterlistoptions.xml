@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/darkblue"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/stockview"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_4dp"
+        android:layout_marginRight="@dimen/margin_4dp"
+        android:layout_height="@dimen/width_70dp"
+        >
+
+        <com.stockchamps.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Contest ending Fri 2nd Oct @ 4pm ESt"
+            android:layout_centerVertical="true"
+            android:textColor="@color/coloryellow"
+            android:textSize="@dimen/textsize_14dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/arrow"
+            android:layout_marginRight="@dimen/margin_6dp"
+            android:maxLines="1"
+            font:typeface="@string/text_uniformmedium">
+        </com.stockchamps.customview.CustomTextView>
+
+        <LinearLayout
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+
+                android:layout_width="@dimen/height_80dp"
+                android:layout_height="@dimen/width_30dp"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_stock_arrow"
+                android:gravity="center"
+                ></ImageView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/white">
+    </View>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/app_statusbarcolor">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/width_30dp"
+            android:layout_height="@dimen/width_30dp"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_6dp"
+            android:adjustViewBounds="true">
+        </ImageView>
+
+
+        <com.stockchamps.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Terms &amp; Conditions"
+            android:textSize="@dimen/textsize_18dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            font:typeface="@string/text_uniformbold">
+
+        </com.stockchamps.customview.CustomTextView>
+
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool"
+        android:background="@color/darkblue">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Terms of Use"
+                android:textSize="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/width_30dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                font:typeface="@string/text_uniformbold">
+
+            </com.stockchamps.customview.CustomTextView>
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="We create customized Privacy Policies for web, Android &amp; iOS app, Facebook app, Twitter developer account, Squarespace, Blogger, Wordpress, Shopify and more."
+                android:textSize="@dimen/textsize_18dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/width_30dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                font:typeface="@string/pro_text_light">
+
+            </com.stockchamps.customview.CustomTextView>
+
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Privacy Policy"
+                android:textSize="@dimen/width_20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/width_30dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                font:typeface="@string/text_uniformbold">
+
+            </com.stockchamps.customview.CustomTextView>
+
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="We create customized Privacy Policies for web, Android &amp; iOS app, Facebook app, Twitter developer account, Squarespace, Blogger, Wordpress, Shopify and more."
+                android:textSize="@dimen/textsize_18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/width_30dp"
+                android:gravity="center"
+                android:layout_margin="@dimen/width_30dp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                font:typeface="@string/pro_text_light">
+
+            </com.stockchamps.customview.CustomTextView>
+
+
+            <com.stockchamps.customview.CustomTextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/sky_blue"
+                android:text="AGREE"
+                android:layout_margin="@dimen/width_30dp"
+                android:textSize="@dimen/textsize_18dp"
+                android:layout_marginTop="@dimen/width_30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                font:typeface="@string/source_pro_bold"
+                android:background="@drawable/bg_edittext"></com.stockchamps.customview.CustomTextView>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

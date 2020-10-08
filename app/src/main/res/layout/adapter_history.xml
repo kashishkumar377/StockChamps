@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkblue"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_50dp"
+        android:orientation="horizontal">
+
+        <com.stockchamps.customview.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="08/14"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/color_pink"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_16dp"
+            font:typeface="@string/text_uniformbold">
+
+        </com.stockchamps.customview.CustomTextView>
+
+        <com.stockchamps.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Money Withdraw"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_14dp"
+            font:typeface="@string/text_uniformbold">
+
+        </com.stockchamps.customview.CustomTextView>
+
+        <com.stockchamps.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.1"
+            android:text="$ 100"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/sky_blue"
+            android:textSize="@dimen/textsize_16dp"
+            font:typeface="@string/text_uniformbold">
+
+        </com.stockchamps.customview.CustomTextView>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

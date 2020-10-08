@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CheckOutFragment"
+    android:background="@color/app_statusbarcolor"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/width_70dp">
+
+        <com.stockchamps.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/width_30dp"
+            android:textColor="@android:color/white"
+            android:text="PICK BLOG"
+            android:textSize="@dimen/textsize_14dp"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/margin_6dp"
+            android:paddingRight="@dimen/margin_6dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            font:typeface="@string/text_uniformmedium"
+            android:background="@drawable/pink_border_button"></com.stockchamps.customview.CustomTextView>
+
+        <com.stockchamps.customview.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="Withdraw"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_16dp"
+            font:typeface="@string/text_uniformbold">
+
+        </com.stockchamps.customview.CustomTextView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding_6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/width_30dp"
+                android:src="@drawable/ic_share">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/width_30dp"
+                android:src="@drawable/ic_circle_mail">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/width_30dp"
+                android:src="@drawable/ic_switch_off">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        android:layout_margin="@dimen/margin_20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_70dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Total amount in Wallet:"
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textsize_16dp"
+                    font:typeface="@string/text_uniformbold">
+
+                </com.stockchamps.customview.CustomTextView>
+
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="@dimen/width_120dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/sky_blue"
+                    android:text="$100.00"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    font:typeface="@string/source_pro_bold"
+                    android:background="@drawable/bg_edittext"></com.stockchamps.customview.CustomTextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_70dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:text="Money to be Withdrawn:"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_16dp"
+                    font:typeface="@string/text_uniformbold">
+
+                </com.stockchamps.customview.CustomTextView>
+
+
+                <com.stockchamps.customview.CustomTextView
+                    android:id="@+id/login"
+                    android:layout_width="@dimen/width_120dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/sky_blue"
+                    android:text="$100.00"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    font:typeface="@string/source_pro_bold"
+                    android:background="@drawable/bg_edittext"></com.stockchamps.customview.CustomTextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_70dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Using Debit Card Ending in:"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:layout_centerVertical="true"
+                    font:typeface="@string/text_uniformbold">
+
+                </com.stockchamps.customview.CustomTextView>
+
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="@dimen/width_120dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/sky_blue"
+                    android:text="$100.00"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    font:typeface="@string/source_pro_bold"
+                    android:background="@drawable/bg_edittext"></com.stockchamps.customview.CustomTextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_70dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="Using Debit Card Ending in:"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:layout_centerVertical="true"
+                    font:typeface="@string/text_uniformbold">
+
+                </com.stockchamps.customview.CustomTextView>
+
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="@dimen/width_120dp"
+                    android:layout_height="@dimen/height_40dp"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/sky_blue"
+                    android:text="$100.00"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    font:typeface="@string/source_pro_bold"
+                    android:background="@drawable/bg_edittext"></com.stockchamps.customview.CustomTextView>
+
+
+            </RelativeLayout>
+
+
+            <com.stockchamps.customview.CustomTextView
+                android:id="@+id/Confirm"
+                android:layout_width="@dimen/width_220dp"
+                android:layout_height="@dimen/height_40dp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/button_pink"
+                android:text="Confirm"
+                android:textSize="@dimen/textsize_18dp"
+                android:layout_marginTop="@dimen/width_30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                font:typeface="@string/source_pro_bold"
+                android:background="@drawable/bg_edittext"></com.stockchamps.customview.CustomTextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

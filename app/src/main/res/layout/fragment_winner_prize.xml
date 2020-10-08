@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    tools:context=".fragments.PrizeFragment"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/winner_contest"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_14dp"
+                android:layout_margin="@dimen/margin_20dp"
+                font:typeface="@string/text_uniformbold">
+
+            </com.stockchamps.customview.CustomTextView>
+
+            <LinearLayout
+                android:layout_width="@dimen/width_220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="1st"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/dark_orange"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/dark_orange"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$1000"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/dark_orange"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:orientation="horizontal">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="2nd"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$500"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:orientation="horizontal">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="3rd"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/orange_red"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/orange_red"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$250"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/orange_red"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_6dp">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="4th"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$100"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_6dp">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="5th"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$100"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_6dp">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="6th"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$100"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/sky_blue"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_6dp">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="7th"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_6dp">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="8th"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_6dp"
+                    android:orientation="horizontal">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="9th"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin_6dp">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="10th"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="$50"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_22dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</ScrollView>

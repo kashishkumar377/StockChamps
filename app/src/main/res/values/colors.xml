@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coloryellow">#F6DB25</color>
+    <color name="colorPrimary">#170137</color>
+    <color name="homesearch">#220255</color>
+    <color name="colorPrimaryDark">#160242</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="darkblue">#19192d</color>
+    <color name="app_statusbarcolor">#191a2f</color>
+   <color name="search_bg">#232540</color>
+    <color name="color_pink">#e82d94</color>
+    <color name="transparent_50">#8C000000</color>
+    <color name="darkGray">#636363</color>
+    <color name="sky_blue">#1e90ff</color>
+    <color name="button_pink">#ff69b4</color>
+<color name="white">#ffffff</color>
+    <color name="dark_orange">#ff8c00</color>
+    <color name="orange_red">#ff4500</color>
+
+
+</resources>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContestFragment"
+    android:background="@color/app_statusbarcolor"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_80dp"
+            android:background="@color/search_bg">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_40dp"
+                android:layout_margin="@dimen/margin_10dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/bg_edittext"
+                android:backgroundTint="@color/app_statusbarcolor"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="@dimen/textsize_18dp"
+                    android:layout_height="@dimen/textsize_18dp"
+                    android:src="@drawable/ic_search"
+                    android:adjustViewBounds="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_10dp">
+
+                </ImageView>
+
+                <com.stockchamps.customview.EditTextCustom
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:layout_toRightOf="@+id/search"
+                    android:hint="SEARCH"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:textColorHint="@color/darkGray"
+                    android:textColor="@android:color/black"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size14"
+                    font:typeface="@string/text_uniformlight"
+                    android:maxLines="1">
+
+                </com.stockchamps.customview.EditTextCustom>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allcontest_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_70dp"
+            android:background="@color/darkblue">
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• 5 Stock Weekly Pick 'Em"
+                android:layout_centerVertical="true"
+                android:textColor="@color/coloryellow"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:textSize="@dimen/textsize12dp"
+                font:typeface="@string/text_uniformmedium">
+
+            </com.stockchamps.customview.CustomTextView>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+
+                <ImageView
+                    android:layout_width="@dimen/textsize_14dp"
+                    android:layout_height="@dimen/textsize_14dp"
+                    android:src="@drawable/ic_share_without_circle"
+                    android:adjustViewBounds="true"
+                    android:layout_marginRight="@dimen/margin_6dp"
+                    android:layout_gravity="center_vertical">
+
+                </ImageView>
+
+                <com.stockchamps.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTEST RULE >"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/darkGray"
+                    android:layout_marginRight="@dimen/margin_6dp"
+                    android:textSize="@dimen/margin_10dp"
+                    font:typeface="@string/text_uniformmedium">
+
+                </com.stockchamps.customview.CustomTextView>
+
+
+
+                <com.stockchamps.customview.CustomTextView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_25dp"
+                    android:textColor="@android:color/white"
+                    android:text="OPEN"
+                    android:textSize="@dimen/margin_10dp"
+                    android:paddingLeft="@dimen/padding_6dp"
+                    android:paddingRight="@dimen/padding_6dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    font:typeface="@string/text_uniformmedium"
+                    android:background="@drawable/green_button"></com.stockchamps.customview.CustomTextView>
+
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:src="@drawable/ic_dots"
+                    android:tint="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_6dp">
+
+                </ImageView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.stockchamps.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_50dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/color_pink"
+            android:text="This is where you enter in starttime for users such as Please enter on Friday at 11:30 AM EST."
+            android:textSize="@dimen/textsize_16dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/color_pink"
+            font:typeface="@string/source_pro_bold"></com.stockchamps.customview.CustomTextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allcontest_list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+</ScrollView>

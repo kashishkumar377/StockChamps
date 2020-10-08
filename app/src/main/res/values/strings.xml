@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">StockChamps</string>
+
+
+    <string name="source_pro_bold">fonts/SourceSansPro-Bold.ttf</string>
+    <string name="source_pro_regular">fonts/SourceSansPro-Regular.ttf</string>
+    <string name="pro_text_light">fonts/SourceSansPro-Light.ttf</string>
+    <string name="source_pro_semibold">fonts/SourceSansPro-SemiBold.ttf</string>
+    <string name="pro_text_regular">fonts/SourceSansPro-Regular.ttf</string>
+    <string name="text_uniformbold">fonts/Uniform Bold.ttf</string>
+    <string name="text_uniformlight">fonts/Uniform Light.ttf</string>
+    <string name="text_uniformmedium">fonts/Uniform Medium.ttf</string>
+
+
+    <string name="error_network">Not able to reach to server at this time. Please try again later.</string>
+    <string name="error_no_response">No data returned</string>
+    <string name="error_unknown">Unkown error occured</string>
+    <string name="error_network_http_error">Bad response from server</string>
+    <string name="enter_name">Please enter username.</string>
+    <string name="enter_surname">Please enter your surname.</string>
+    <string name="enter_valid_email">Please enter valid email.</string>
+    <string name="enter_password">Please enter your password.</string>
+    <string name="something_wrong">Something went wrong , try again</string>
+    <string name="yes">Yes</string>
+    <string name="logot">Are you sure you want to Logout?</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_content">Register now to try your stocks picking \nskill agianst other player and win cash prizes!</string>
+    <string name="winner_contest">The winner will be annouced at the end of the \ncontest. The following Payout distribution \nwill be automatically paid out to the accounts \n at theclose of the contest.</string>
+    <string name="content1">Contest ending fri 2nd oct @ 4pm \nMonday 6/17/20</string>
+    <string name="welcome_to_stock_champs">WELCOME TO STOCK CHAMPS</string>
+    <string name="get_started">Get Started!</string>
+    <string name="the_stock_champs">THE STOCK CHAMPS</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="don_t_have_not_account">Don\'t have not account?</string>
+    <string name="register">Register</string>
+    <string name="forgot_password_link">Forgot password Only</string>
+    <string name="terms_text">I have read and agree to the </string>
+    <string name="and"> and </string>
+    <string name="agree">AGREE</string>
+
+</resources>

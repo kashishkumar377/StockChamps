@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_login_bg"
+    tools:context=".fragments.LoginFragment"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="THE STOCK CHAMPS"
+                android:layout_marginTop="@dimen/width_30dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_22dp"
+                font:typeface="@string/text_uniformbold">
+
+            </com.stockchamps.customview.CustomTextView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/width_20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_stock_champ">
+            </ImageView>
+
+
+            <com.stockchamps.customview.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/login_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_16dp"
+                font:typeface="@string/pro_text_regular">
+
+            </com.stockchamps.customview.CustomTextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/width_20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/width_20dp">
+
+                    <ImageView
+                        android:id="@+id/username"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="@dimen/width_30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_email">
+                    </ImageView>
+
+                    <com.stockchamps.customview.EditTextCustom
+                        android:id="@+id/ed_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="Username"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_16dp"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:textColorHint="@android:color/white"
+                        android:layout_toRightOf="@+id/username"
+                        ></com.stockchamps.customview.EditTextCustom>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_6dp"
+                        android:background="@android:color/white"
+                        android:layout_below="@+id/username">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/width_20dp">
+
+                    <ImageView
+                        android:id="@+id/email"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="@dimen/width_30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_email">
+                    </ImageView>
+
+                    <com.stockchamps.customview.EditTextCustom
+                        android:id="@+id/ed_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="Email Address"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:textColorHint="@android:color/white"
+                        android:layout_toRightOf="@+id/email"
+                        android:textSize="@dimen/textsize_16dp"
+                        ></com.stockchamps.customview.EditTextCustom>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_6dp"
+                        android:background="@android:color/white"
+                        android:layout_below="@+id/email">
+
+                    </View>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/width_20dp">
+
+                    <ImageView
+                        android:id="@+id/password"
+                        android:layout_width="@dimen/width_30dp"
+                        android:layout_height="@dimen/width_30dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_password">
+                    </ImageView>
+
+                    <com.stockchamps.customview.EditTextCustom
+                        android:id="@+id/ed_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="Password"
+                        android:textColor="@color/white"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:layout_marginLeft="@dimen/margin_10dp"
+                        android:textColorHint="@android:color/white"
+                        android:layout_toRightOf="@+id/password"
+                        android:textSize="@dimen/textsize_16dp"
+                        ></com.stockchamps.customview.EditTextCustom>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_6dp"
+                        android:background="@android:color/white"
+                        android:layout_below="@+id/password">
+
+                    </View>
+                </RelativeLayout>
+
+
+                <com.stockchamps.customview.CustomTextView
+                    android:id="@+id/signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_40dp"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="#ff69b4"
+                    android:text="REGISTER"
+                    android:textSize="@dimen/textsize_18dp"
+                    android:layout_marginTop="@dimen/width_30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    font:typeface="@string/source_pro_bold"
+                    android:background="@drawable/bg_edittext"></com.stockchamps.customview.CustomTextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/width_20dp"
+                    android:orientation="horizontal">
+
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="Already have an account?"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_16dp"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        font:typeface="@string/pro_text_regular">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:id="@+id/login_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_6dp"
+                        android:text="Login"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_16dp"
+                        font:typeface="@string/source_pro_bold">
+
+                    </com.stockchamps.customview.CustomTextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/termsview"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/width_20dp">
+
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="#1e90ff"
+                    android:backgroundTint="@color/colorPrimary">
+
+                </CheckBox>
+
+                <com.stockchamps.customview.CustomTextView
+                    android:id="@+id/terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="I have read and agree to the Terms of Service and Privacy Policy."
+                    android:layout_toRightOf="@+id/checkbox"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_16dp"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    font:typeface="@string/pro_text_regular">
+
+                </com.stockchamps.customview.CustomTextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

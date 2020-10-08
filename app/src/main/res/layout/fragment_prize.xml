@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    tools:context=".fragments.PrizeFragment"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+
+            <LinearLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_70dp"
+                android:background="@color/search_bg"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rv_contest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:id="@+id/cv_contest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Contest"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_14dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="@dimen/height_100dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="invisible"
+                        android:background="@color/color_pink">
+
+                    </View>
+                </RelativeLayout>
+
+ <RelativeLayout
+                android:id="@+id/rv_rules"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:id="@+id/cv_rules"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Contest Rule"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_14dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="@dimen/height_100dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="invisible"
+                        android:background="@color/color_pink">
+
+                    </View>
+                </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/rv_winner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:id="@+id/cv_prize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Prize winnings"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/orange_red"
+                        android:textSize="@dimen/textsize_14dp"
+                        font:typeface="@string/text_uniformbold">
+
+                    </com.stockchamps.customview.CustomTextView>
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="@dimen/height_100dp"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/color_pink">
+
+                    </View>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragmentHolders"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+</RelativeLayout>
