@@ -24,7 +24,6 @@ public class AdapterResult extends RecyclerView.Adapter<AdapterResult.ViewHolder
     public AdapterResult(Activity con) {
         this.context = con;
         inflater = LayoutInflater.from(con);
-
     }
 
     @Override
