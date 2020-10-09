@@ -35,8 +35,6 @@ public class AdapterResultList  extends RecyclerView.Adapter<AdapterResultList.V
 
     @Override
     public void onBindViewHolder(AdapterResultList.ViewHolder holder, int position) {
-
-
         holder.count.setText(position+1+"");
 
 

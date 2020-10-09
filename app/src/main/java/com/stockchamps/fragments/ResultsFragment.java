@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import com.stockchamps.R;
 import com.stockchamps.activities.StockPicksActivity;
 import com.stockchamps.adapters.AdapterResultList;
+import com.stockchamps.adapters.AdapterResulttab;
 import com.stockchamps.adapters.AdapterStockPicks;
 import com.stockchamps.healper.ViewUtils;
 
@@ -33,7 +34,7 @@ public class ResultsFragment extends Fragment {
 
     public ViewUtils viewUtils;
 
-    AdapterResultList adapterResultList;
+    AdapterResulttab adapterResultList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -46,7 +47,7 @@ public class ResultsFragment extends Fragment {
         list.setLayoutManager(new LinearLayoutManager(getActivity(),
                 LinearLayoutManager.VERTICAL, false));
 
-        adapterResultList = new AdapterResultList(getActivity());
+        adapterResultList = new AdapterResulttab(getActivity());
         list.setAdapter(adapterResultList);
 
         return view;

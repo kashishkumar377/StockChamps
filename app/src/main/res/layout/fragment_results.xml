@@ -26,7 +26,6 @@
             android:adjustViewBounds="true"></ImageView>
 
 
-
         <com.stockchamps.customview.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,8 +35,6 @@
             android:textColor="@android:color/white"
             android:textSize="@dimen/textsize_16dp"
             font:typeface="@string/text_uniformbold"/>
-
-
 
     </FrameLayout>
 
@@ -74,14 +71,13 @@
                 android:hint="SEARCH"
                 android:layout_marginLeft="@dimen/margin_10dp"
                 android:textColorHint="@color/darkGray"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/white"
                 android:singleLine="true"
                 android:textSize="@dimen/text_size14"
                 font:typeface="@string/text_uniformlight"
                 android:maxLines="1">
 
             </com.stockchamps.customview.EditTextCustom>
-
         </RelativeLayout>
     </LinearLayout>
 

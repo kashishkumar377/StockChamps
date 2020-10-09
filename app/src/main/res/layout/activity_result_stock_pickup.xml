@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StockActivity"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    xmlns:font="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit"
+        android:paddingBottom="@dimen/padding_6dp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_70dp"
+            android:background="@color/app_statusbarcolor">
+
+            <ImageView
+                android:id="@+id/dollar"
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/width_30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:src="@drawable/ic_back"></ImageView>
+
+            <ImageView
+                android:id="@+id/expanded_menu"
+                android:layout_width="@dimen/width_30dp"
+                android:layout_height="@dimen/width_30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_circle_menu"></ImageView>
+
+            <com.stockchamps.customview.CustomTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Stocks Picks"
+                android:textAllCaps="true"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_16dp"
+                font:typeface="@string/text_uniformbold">
+
+            </com.stockchamps.customview.CustomTextView>
+        </RelativeLayout>
+
+
+        <com.stockchamps.customview.CustomTextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="USERNAME"
+            android:textAllCaps="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textsize_14dp"
+            font:typeface="@string/text_uniformbold"/>
+
+        <com.stockchamps.customview.CustomTextView
+            android:layout_width="@dimen/width_150dp"
+            android:layout_height="@dimen/width_30dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="newbeta"
+            android:background="@drawable/bg_transparent" android:textAllCaps="true"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize12dp"
+            font:typeface="@string/text_uniformbold"/>
+
+
+
+
+        <FrameLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tool"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/width_70dp"
+                android:src="@drawable/ic_bg_pink"
+                android:adjustViewBounds="true"></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="Live Price"
+                        android:textAllCaps="true"
+                        android:layout_centerVertical="true"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/margin_10dp"
+                        font:typeface="@string/text_uniformbold"/>
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="$100.00"
+                        android:textAllCaps="true"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/margin_4dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_14dp"
+                        font:typeface="@string/text_uniformbold"/>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="Entry Prize"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/margin_10dp"
+                        font:typeface="@string/text_uniformbold"/>
+                    <com.stockchamps.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="$80"
+                        android:textAllCaps="true"
+                        android:layout_marginTop="@dimen/margin_4dp"
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:layout_centerInParent="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_14dp"
+                        font:typeface="@string/text_uniformbold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttons"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+    <com.stockchamps.customview.CustomTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/width_30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Submit"
+        android:background="@drawable/pink_border_button"
+        android:backgroundTint="@color/sky_blue"
+        android:textAllCaps="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize12dp"
+        font:typeface="@string/text_uniformbold"/>
+
+
+
+</RelativeLayout>
